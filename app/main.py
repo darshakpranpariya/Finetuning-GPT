@@ -38,7 +38,13 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("**About:**")
-    st.markdown("This app is made using fine tuning large language model(GPT) based on oops data of four programming languages(C,C++,Java,C#)")
+    st.markdown("This app is made using fine tuning large language model(GPT) based on data of 5 most famous self help books")
+    st.markdown("The Seven Habits of Highly Effective People")
+    st.markdown("How to Win Friends and Influence People")
+    st.markdown("The Power of Now")
+    st.markdown("The 5 Love Languagese")
+    st.markdown("Atomic Habits")
+   
 
 # Create the chat UI
 message_input = st.text_input("Your message:", key="input")
