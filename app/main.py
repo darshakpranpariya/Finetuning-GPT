@@ -3,12 +3,10 @@ import time
 from llama_index import GPTSimpleVectorIndex
 import os
 
-
-
 os.environ["OPENAI_API_KEY"] = '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'
 
 def ask_bot(message):
-    index = GPTSimpleVectorIndex.load_from_disk('../index.json')
+    index = GPTSimpleVectorIndex.load_from_disk('index.json')
     response = index.query(message, response_mode="compact")
     return response.response
 
